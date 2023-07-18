@@ -13,3 +13,9 @@ class Account {
         this.balance += amount;
     }
 }
+//Creating an object from that account
+let account = new Account(1, 'Willy', 0);
+account.depost(100000);
+console.log(account.balance);
+//Checking if new object is an instance of the class
+console.log(account instanceof Account);
